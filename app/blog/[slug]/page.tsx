@@ -1,12 +1,35 @@
-import type { Metadata } from "next"
-import Link from "next/link"
-import { Calendar, Clock, User, Eye, Share2, BookmarkPlus, ArrowLeft, Tag } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import type { Metadata } from "next";
+import Link from "next/link";
+import {
+  Calendar,
+  Clock,
+  User,
+  Eye,
+  Share2,
+  BookmarkPlus,
+  ArrowLeft,
+  Tag,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 // This would typically come from a CMS or database
-const blogPost = {
+const blogPost: {
+  id: number;
+  title: string;
+  content: string;
+  excerpt: string;
+  category: string;
+  author: string;
+  date: string;
+  readTime: string;
+  image?: string;
+  slug: string;
+  tags: string[];
+  categoryColor: string;
+} = {
   id: 1,
-  title: "New Corporate Compliance Requirements for 2024: What Businesses Need to Know",
+  title:
+    "New Corporate Compliance Requirements for 2024: What Businesses Need to Know",
   content: `
     <p>The corporate landscape is constantly evolving, and 2024 brings significant changes to compliance requirements that every business must understand and implement. These new regulations are designed to enhance transparency, protect stakeholders, and ensure sustainable business practices.</p>
 
@@ -81,19 +104,28 @@ const blogPost = {
   author: "Rajat Goyal",
   date: "2024-01-15",
   readTime: "8 min read",
-  views: 1250,
-  image: "/placeholder.svg?height=400&width=800",
+  // image: "/placeholder.svg?height=400&width=800",
   slug: "corporate-compliance-2024",
-  tags: ["Compliance", "Regulations", "2024 Updates", "Corporate Governance", "Business Law"],
+  tags: [
+    "Compliance",
+    "Regulations",
+    "2024 Updates",
+    "Corporate Governance",
+    "Business Law",
+  ],
   categoryColor: "from-green-500 to-green-600",
-}
+};
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   return {
     title: `${blogPost.title} | Rajat Goyal`,
     description: blogPost.excerpt,
     keywords: blogPost.tags.join(", "),
-  }
+  };
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
@@ -131,7 +163,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </h1>
 
           {/* Meta Information */}
-          <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
+          <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-2">
             <div className="flex items-center space-x-2">
               <User className="w-5 h-5" />
               <span className="font-medium">{blogPost.author}</span>
@@ -144,14 +176,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               <Clock className="w-5 h-5" />
               <span>{blogPost.readTime}</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Eye className="w-5 h-5" />
-              <span>{blogPost.views.toLocaleString()} views</span>
-            </div>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex items-center space-x-4 mb-8">
+          {/* <div className="flex items-center space-x-4 mb-8">
             <Button variant="outline" size="sm" className="flex items-center space-x-2 bg-transparent">
               <BookmarkPlus className="w-4 h-4" />
               <span>Save Article</span>
@@ -160,7 +188,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               <Share2 className="w-4 h-4" />
               <span>Share</span>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -168,17 +196,22 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Featured Image */}
-          <div className="mb-12">
-            <img
-              src={blogPost.image || "/placeholder.svg"}
-              alt={blogPost.title}
-              className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
-            />
-          </div>
+          {blogPost.image && (
+            <div className="mb-12">
+              <img
+                src={blogPost.image || "/placeholder.svg"}
+                alt={blogPost.title}
+                className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
+              />
+            </div>
+          )}
 
           {/* Article Content */}
           <div className="prose prose-lg max-w-none">
-            <div className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: blogPost.content }} />
+            <div
+              className="text-gray-700 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: blogPost.content }}
+            />
           </div>
 
           {/* Tags */}
@@ -202,13 +235,21 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           {/* Author Bio */}
           <div className="mt-12 p-8 bg-gradient-to-r from-primary-50 to-blue-50 rounded-2xl">
             <div className="flex items-start space-x-4">
-              <img src="/placeholder-user.jpg" alt={blogPost.author} className="w-16 h-16 rounded-full object-cover" />
+              <img
+                src="/placeholder-user.jpg"
+                alt={blogPost.author}
+                className="w-16 h-16 rounded-full object-cover"
+              />
               <div>
-                <h3 className="font-playfair text-xl font-bold text-slate-900 mb-2">{blogPost.author}</h3>
+                <h3 className="font-playfair text-xl font-bold text-slate-900 mb-2">
+                  {blogPost.author}
+                </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Rajat Goyal is a qualified Company Secretary with over 10 years of experience in corporate law,
-                  compliance, and business advisory services. He specializes in helping businesses navigate complex
-                  regulatory requirements and achieve sustainable growth.
+                  Rajat Goyal is a qualified Company Secretary with over 10
+                  years of experience in corporate law, compliance, and business
+                  advisory services. He specializes in helping businesses
+                  navigate complex regulatory requirements and achieve
+                  sustainable growth.
                 </p>
               </div>
             </div>
@@ -216,7 +257,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
           {/* Related Articles */}
           <div className="mt-16">
-            <h3 className="font-playfair text-2xl font-bold text-slate-900 mb-8">Related Articles</h3>
+            <h3 className="font-playfair text-2xl font-bold text-slate-900 mb-8">
+              Related Articles
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Link
                 href="/blog/startup-legal-documents"
@@ -226,7 +269,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   Essential Legal Documents Every Startup Needs
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  A comprehensive checklist of must-have legal documentation for new businesses.
+                  A comprehensive checklist of must-have legal documentation for
+                  new businesses.
                 </p>
               </Link>
               <Link
@@ -237,7 +281,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   Board Meeting Best Practices
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  How to conduct productive board meetings that drive business success.
+                  How to conduct productive board meetings that drive business
+                  success.
                 </p>
               </Link>
             </div>
@@ -245,5 +290,5 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -1,10 +1,11 @@
-import Link from "next/link"
-import { Calendar, Clock, User, Eye, ArrowRight } from "lucide-react"
+import Link from "next/link";
+import { Calendar, Clock, User, Eye, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
     id: 1,
-    title: "New Corporate Compliance Requirements for 2024: What Businesses Need to Know",
+    title:
+      "New Corporate Compliance Requirements for 2024: What Businesses Need to Know",
     excerpt:
       "Understanding the latest regulatory changes and their impact on your business operations. A comprehensive guide to staying compliant in the evolving legal landscape.",
     category: "Compliance",
@@ -32,7 +33,8 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "Board Meeting Best Practices: Ensuring Effective Corporate Governance",
+    title:
+      "Board Meeting Best Practices: Ensuring Effective Corporate Governance",
     excerpt:
       "How to conduct productive board meetings that drive business success while maintaining compliance with governance requirements.",
     category: "Corporate Governance",
@@ -46,7 +48,8 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: "Digital Transformation in Legal Services: Embracing Technology for Better Client Service",
+    title:
+      "Digital Transformation in Legal Services: Embracing Technology for Better Client Service",
     excerpt:
       "Exploring how technology is revolutionizing legal services and improving client experiences in the modern business environment.",
     category: "Legal Updates",
@@ -60,7 +63,8 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "Understanding Due Diligence: A Complete Guide for Business Transactions",
+    title:
+      "Understanding Due Diligence: A Complete Guide for Business Transactions",
     excerpt:
       "Everything you need to know about due diligence processes in mergers, acquisitions, and investment transactions.",
     category: "Business Advisory",
@@ -74,7 +78,8 @@ const blogPosts = [
   },
   {
     id: 6,
-    title: "Contract Drafting Essentials: Key Clauses Every Business Contract Should Include",
+    title:
+      "Contract Drafting Essentials: Key Clauses Every Business Contract Should Include",
     excerpt:
       "Master the art of contract drafting with our guide to essential clauses that protect your business interests.",
     category: "Legal Updates",
@@ -86,11 +91,11 @@ const blogPosts = [
     slug: "contract-drafting-essentials",
     categoryColor: "from-red-500 to-red-600",
   },
-]
+];
 
 export function BlogGrid() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 pt-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
@@ -136,7 +141,9 @@ export function BlogGrid() {
                 </h3>
 
                 {/* Excerpt */}
-                <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">{post.excerpt}</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
+                  {post.excerpt}
+                </p>
 
                 {/* Footer */}
                 <div className="flex items-center justify-between pt-4 border-t border-gray-100">
@@ -171,5 +178,5 @@ export function BlogGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }

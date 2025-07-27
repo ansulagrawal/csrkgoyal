@@ -1,4 +1,4 @@
-import { Search, TrendingUp, BookOpen, Users, Sparkles, Filter } from "lucide-react"
+import { BookOpen, Sparkles, TrendingUp, Users } from "lucide-react"
 
 const stats = [
   { icon: BookOpen, label: "Articles Published", value: "150+", color: "from-primary-500 to-primary-600" },
@@ -31,33 +31,6 @@ export function BlogHero() {
             Knowledge that empowers your business decisions and keeps you informed about the evolving legal landscape.
           </p>
 
-          {/* Enhanced Search Bar */}
-          <div className="max-w-3xl mx-auto mb-12">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-              <div className="relative bg-white rounded-2xl shadow-xl border border-gray-200">
-                <div className="flex items-center">
-                  <Search className="absolute left-6 text-gray-400 w-5 h-5" />
-                  <input
-                    type="text"
-                    placeholder="Search articles, topics, compliance updates..."
-                    className="w-full pl-14 pr-32 py-5 text-lg border-0 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:outline-none"
-                  />
-                  <div className="absolute right-2 flex items-center space-x-2">
-                    <button className="p-2 text-gray-400 hover:text-primary-600 transition-colors duration-200">
-                      <Filter className="w-5 h-5" />
-                    </button>
-                    <button className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all duration-200 font-medium">
-                      Search
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p className="text-sm text-gray-500 mt-3">
-              Popular searches: GST Updates, Corporate Compliance, Tax Planning, Legal Advisory
-            </p>
-          </div>
         </div>
 
         {/* Enhanced Stats */}
@@ -82,7 +55,7 @@ export function BlogHero() {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="mt-16 bg-gradient-to-r from-primary-600 to-blue-600 rounded-2xl p-8 text-center text-white">
+        {/* <div className="mt-16 bg-gradient-to-r from-primary-600 to-blue-600 rounded-2xl p-8 text-center text-white">
           <h3 className="font-playfair text-2xl font-bold mb-4">Stay Updated with Legal Insights</h3>
           <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
             Get weekly updates on compliance changes, legal insights, and business advisory tips delivered to your
@@ -98,7 +71,7 @@ export function BlogHero() {
               Subscribe
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )
