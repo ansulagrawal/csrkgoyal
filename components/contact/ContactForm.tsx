@@ -73,10 +73,10 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <section className="bg-gradient-to-br from-green-50 to-emerald-50 py-20">
+      <section className="bg-gradient-to-br from-green-50 to-primary-50 py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-3xl p-12 shadow-2xl border border-green-100">
-            <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="w-10 h-10 text-white" />
             </div>
             <h3 className="font-playfair text-3xl font-bold text-green-800 mb-4">Message Sent Successfully!</h3>

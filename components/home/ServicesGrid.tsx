@@ -11,7 +11,7 @@ const services = [
     description: "Comprehensive compliance management to keep your business aligned with regulatory requirements.",
     icon: Shield,
     features: ["Regulatory Filings", "Board Meetings", "Annual Returns", "Compliance Audits"],
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-primary-500 to-primary-600",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const services = [
     description: "Expert drafting and review of legal documents to protect your business interests.",
     icon: FileText,
     features: ["Contract Drafting", "Agreement Review", "Legal Opinions", "Documentation"],
-    color: "from-emerald-600 to-emerald-700",
+    color: "from-primary-600 to-primary-700",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const services = [
     description: "Strategic guidance to help your business navigate complex regulatory landscapes.",
     icon: TrendingUp,
     features: ["Strategic Planning", "Risk Assessment", "Growth Advisory", "Restructuring"],
-    color: "from-emerald-400 to-emerald-500",
+    color: "from-primary-400 to-primary-500",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const services = [
     description: "Establishing robust governance frameworks for sustainable business growth.",
     icon: Users,
     features: ["Board Support", "Policy Development", "Ethics Framework", "Stakeholder Relations"],
-    color: "from-emerald-700 to-emerald-800",
+    color: "from-primary-700 to-primary-800",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const services = [
     description: "Timely and accurate regulatory submissions to maintain compliance status.",
     icon: CheckCircle,
     features: ["ROC Filings", "Tax Compliance", "Statutory Returns", "Regulatory Updates"],
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-primary-500 to-primary-600",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const services = [
     description: "Thorough due diligence services for mergers, acquisitions, and investments.",
     icon: FileText,
     features: ["Legal DD", "Financial Review", "Compliance Check", "Risk Analysis"],
-    color: "from-emerald-600 to-emerald-700",
+    color: "from-primary-600 to-primary-700",
   },
 ]
 
@@ -97,7 +97,7 @@ export function ServicesGrid() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="font-playfair text-2xl font-bold text-slate-900 mb-4 group-hover:text-emerald-600 transition-colors duration-300">
+                  <h3 className="font-playfair text-2xl font-bold text-slate-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
                     {service.title}
                   </h3>
 
@@ -107,7 +107,7 @@ export function ServicesGrid() {
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, index) => (
                       <li key={index} className="flex items-center text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-primary-500 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -116,7 +116,7 @@ export function ServicesGrid() {
                   {/* CTA */}
                   <Link
                     href="/services"
-                    className="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors duration-200 group/link"
+                    className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200 group/link"
                   >
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4 transform group-hover/link:translate-x-1 transition-transform duration-200" />
@@ -124,7 +124,7 @@ export function ServicesGrid() {
                 </div>
 
                 {/* Hover Effect Border */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-emerald-200 rounded-2xl transition-colors duration-300"></div>
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary-200 rounded-2xl transition-colors duration-300"></div>
               </div>
             )
           })}
@@ -134,7 +134,7 @@ export function ServicesGrid() {
         <div className="text-center mt-16">
           <Link
             href="/services"
-            className="inline-flex items-center px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 focus-visible:focus"
+            className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all duration-200 transform hover:scale-105 focus-visible:focus"
           >
             View All Services
             <ArrowRight className="ml-2 w-5 h-5" />

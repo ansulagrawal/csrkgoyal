@@ -7,7 +7,7 @@ export function VisionMission() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Vision */}
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl mb-6 mx-auto">
+            <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl mb-6 mx-auto">
               <Eye className="w-8 h-8 text-white" />
             </div>
 
@@ -21,7 +21,7 @@ export function VisionMission() {
 
           {/* Mission */}
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl mb-6 mx-auto">
+            <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl mb-6 mx-auto">
               <Target className="w-8 h-8 text-white" />
             </div>
 
@@ -35,7 +35,7 @@ export function VisionMission() {
 
           {/* Purpose */}
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl mb-6 mx-auto">
+            <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl mb-6 mx-auto">
               <Heart className="w-8 h-8 text-white" />
             </div>
 
@@ -54,7 +54,7 @@ export function VisionMission() {
             "Success in business requires training and discipline and hard work. But if you're not frightened by these
             things, the opportunities are just as great today as they ever were."
           </blockquote>
-          <cite className="text-emerald-600 font-semibold">- David Rockefeller</cite>
+          <cite className="text-primary-600 font-semibold">- David Rockefeller</cite>
         </div>
       </div>
     </section>

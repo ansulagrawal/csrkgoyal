@@ -74,7 +74,7 @@ export function TestimonialsSection() {
         <div className="relative max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 relative overflow-hidden">
             {/* Quote Icon */}
-            <div className="absolute top-6 right-6 text-emerald-100">
+            <div className="absolute top-6 right-6 text-primary-100">
               <Quote className="w-16 h-16" />
             </div>
 
@@ -97,11 +97,11 @@ export function TestimonialsSection() {
                 <img
                   src={testimonials[currentIndex].image || "/placeholder.svg"}
                   alt={testimonials[currentIndex].name}
-                  className="w-16 h-16 rounded-full object-cover border-4 border-emerald-100"
+                  className="w-16 h-16 rounded-full object-cover border-4 border-primary-100"
                 />
                 <div>
                   <h4 className="font-semibold text-lg text-slate-900">{testimonials[currentIndex].name}</h4>
-                  <p className="text-emerald-600 font-medium">{testimonials[currentIndex].position}</p>
+                  <p className="text-primary-600 font-medium">{testimonials[currentIndex].position}</p>
                   <p className="text-gray-500 text-sm">{testimonials[currentIndex].company}</p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export function TestimonialsSection() {
           {/* Navigation Buttons */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white text-emerald-600 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 focus-visible:focus"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white text-primary-600 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 focus-visible:focus"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -119,7 +119,7 @@ export function TestimonialsSection() {
 
           <button
             onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white text-emerald-600 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 focus-visible:focus"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white text-primary-600 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 focus-visible:focus"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6" />
@@ -133,7 +133,7 @@ export function TestimonialsSection() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                index === currentIndex ? "bg-emerald-600 w-8" : "bg-emerald-200 hover:bg-emerald-300"
+                index === currentIndex ? "bg-primary-600 w-8" : "bg-primary-200 hover:bg-primary-300"
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />

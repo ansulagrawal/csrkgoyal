@@ -95,7 +95,7 @@ export function BlogCarousel() {
                   {/* Content */}
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4 text-sm text-gray-500">
-                      <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full font-medium">
+                      <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full font-medium">
                         {post.category}
                       </span>
                       <div className="flex items-center space-x-1">
@@ -116,7 +116,7 @@ export function BlogCarousel() {
 
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors duration-200 group"
+                      className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200 group"
                     >
                       Read Full Article
                       <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" />
@@ -125,7 +125,7 @@ export function BlogCarousel() {
 
                   {/* Image */}
                   <div className="relative">
-                    <div className="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden bg-emerald-100">
+                    <div className="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden bg-primary-100">
                       <img
                         src={post.image || "/placeholder.svg"}
                         alt={post.title}
@@ -141,7 +141,7 @@ export function BlogCarousel() {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-emerald-600 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 focus-visible:focus"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-primary-600 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 focus-visible:focus"
             aria-label="Previous blog post"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -149,7 +149,7 @@ export function BlogCarousel() {
 
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-emerald-600 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 focus-visible:focus"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-primary-600 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 focus-visible:focus"
             aria-label="Next blog post"
           >
             <ChevronRight className="w-6 h-6" />
@@ -163,7 +163,7 @@ export function BlogCarousel() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                index === currentIndex ? "bg-emerald-600 w-8" : "bg-emerald-200 hover:bg-emerald-300"
+                index === currentIndex ? "bg-primary-600 w-8" : "bg-primary-200 hover:bg-primary-300"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -174,7 +174,7 @@ export function BlogCarousel() {
         <div className="text-center mt-12">
           <Link
             href="/blog"
-            className="inline-flex items-center px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 focus-visible:focus"
+            className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all duration-200 transform hover:scale-105 focus-visible:focus"
           >
             View All Articles
             <ArrowRight className="ml-2 w-5 h-5" />

@@ -86,12 +86,12 @@ export function ProcessVisualization() {
                   {/* Step Card */}
                   <div
                     className={`bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
-                      activeStep === step.id ? "ring-2 ring-emerald-400 shadow-xl" : ""
+                      activeStep === step.id ? "ring-2 ring-primary-400 shadow-xl" : ""
                     }`}
                   >
                     {/* Step Number & Icon */}
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl relative z-10">
+                      <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl relative z-10">
                         <IconComponent className="w-6 h-6 text-white" />
                       </div>
                       <div className="text-2xl font-bold text-slate-300">0{step.id}</div>
@@ -102,14 +102,14 @@ export function ProcessVisualization() {
                     <p className="text-gray-600 text-sm leading-relaxed mb-4">{step.description}</p>
 
                     {/* Duration */}
-                    <div className="text-xs text-emerald-600 font-medium bg-emerald-100 px-3 py-1 rounded-full inline-block">
+                    <div className="text-xs text-primary-600 font-medium bg-primary-100 px-3 py-1 rounded-full inline-block">
                       {step.duration}
                     </div>
 
                     {/* Expand Indicator */}
                     <div className="mt-4 flex justify-center">
                       <ArrowRight
-                        className={`w-4 h-4 text-emerald-400 transform transition-transform duration-200 ${
+                        className={`w-4 h-4 text-primary-400 transform transition-transform duration-200 ${
                           activeStep === step.id ? "rotate-90" : ""
                         }`}
                       />
@@ -118,12 +118,12 @@ export function ProcessVisualization() {
 
                   {/* Expanded Details */}
                   {activeStep === step.id && (
-                    <div className="mt-4 bg-white rounded-xl p-6 shadow-lg border-2 border-emerald-100 animate-fade-in-up">
+                    <div className="mt-4 bg-white rounded-xl p-6 shadow-lg border-2 border-primary-100 animate-fade-in-up">
                       <h4 className="font-semibold text-slate-900 mb-3">What We Do:</h4>
                       <ul className="space-y-2">
                         {step.details.map((detail, detailIndex) => (
                           <li key={detailIndex} className="flex items-center text-sm text-gray-600">
-                            <CheckCircle className="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-primary-500 mr-2 flex-shrink-0" />
                             {detail}
                           </li>
                         ))}
@@ -145,10 +145,10 @@ export function ProcessVisualization() {
               to your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors duration-200">
+              <button className="px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200">
                 Schedule Consultation
               </button>
-              <button className="px-8 py-3 border-2 border-emerald-600 text-emerald-600 font-semibold rounded-lg hover:bg-emerald-600 hover:text-white transition-colors duration-200">
+              <button className="px-8 py-3 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-600 hover:text-white transition-colors duration-200">
                 View Pricing
               </button>
             </div>

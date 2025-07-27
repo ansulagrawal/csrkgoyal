@@ -32,7 +32,7 @@ export function Navigation() {
 
   return (
     <>
-      <a href="#main-content" className="skip-link">
+      <a href="#main-content" className="skip-link text-primary-950">
         Skip to main content
       </a>
       <nav

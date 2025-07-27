@@ -63,8 +63,8 @@ export function GSTServices() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-full mx-auto mb-6">
-            <Calculator className="w-8 h-8 text-emerald-600" />
+          <div className="flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mx-auto mb-6">
+            <Calculator className="w-8 h-8 text-primary-600" />
           </div>
           <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
             Goods & Services Tax (GST)
@@ -84,11 +84,11 @@ export function GSTServices() {
             return (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:border-emerald-200"
+                className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary-200"
               >
                 <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-lg flex-shrink-0">
-                    <IconComponent className="w-6 h-6 text-emerald-600" />
+                  <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg flex-shrink-0">
+                    <IconComponent className="w-6 h-6 text-primary-600" />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-playfair text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
@@ -96,7 +96,7 @@ export function GSTServices() {
                     <ul className="space-y-2">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                          <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-3"></div>
+                          <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-3"></div>
                           {feature}
                         </li>
                       ))}
@@ -117,7 +117,7 @@ export function GSTServices() {
             {["Drafting Replies", "Legal Representation", "Pleading Matters", "Filing and Contesting Appeals"].map(
               (service, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Gavel className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-semibold text-slate-900 mb-2">{service}</h4>

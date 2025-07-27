@@ -2,43 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-slate-50: oklch(0.984 0.003 247.858);
-  --color-slate-100: oklch(0.961 0.013 252.096);
-  --color-slate-200: oklch(0.918 0.027 255.331);
-  --color-slate-300: oklch(0.859 0.04 254.139);
-  --color-slate-400: oklch(0.71 0.044 256.788);
-  --color-slate-500: oklch(0.556 0.046 257.417);
-  --color-slate-600: oklch(0.431 0.046 257.793);
-  --color-slate-700: oklch(0.347 0.043 258.338);
-  --color-slate-800: oklch(0.267 0.04 260.194);
-  --color-slate-900: oklch(0.156 0.032 258.338);
-  --color-slate-950: oklch(0.078 0.021 264.722);
 
-  --color-primary-50: oklch(0.97 0.013 238.72);
-  --color-primary-100: oklch(0.929 0.026 240.01);
-  --color-primary-200: oklch(0.858 0.051 241.28);
-  --color-primary-300: oklch(0.764 0.084 242.33);
-  --color-primary-400: oklch(0.651 0.108 243.83);
-  --color-primary-500: oklch(0.549 0.13 244.75);
-  --color-primary-600: oklch(0.451 0.13 245.75);
-  --color-primary-700: oklch(0.369 0.108 247.89);
-  --color-primary-800: oklch(0.298 0.086 251.59);
-  --color-primary-900: oklch(0.258 0.067 256.85);
-  --color-primary-950: oklch(0.171 0.045 260.75);
-
-  --color-amber-50: oklch(0.985 0.024 102.212);
-  --color-amber-100: oklch(0.957 0.058 99.567);
-  --color-amber-200: oklch(0.91 0.116 96.018);
-  --color-amber-300: oklch(0.852 0.182 91.934);
-  --color-amber-400: oklch(0.808 0.239 87.896);
-  --color-amber-500: oklch(0.754 0.267 83.333);
-  --color-amber-600: oklch(0.682 0.267 78.148);
-  --color-amber-700: oklch(0.567 0.216 75.849);
-  --color-amber-800: oklch(0.469 0.171 75.849);
-  --color-amber-900: oklch(0.395 0.139 78.148);
-  --color-amber-950: oklch(0.223 0.078 83.333);
-}
 
 .font-playfair {
   font-family: var(--font-playfair);
@@ -102,16 +66,17 @@ html {
 
 /* Focus styles for accessibility */
 .focus-visible:focus {
-  outline: 2px solid var(--color-primary-500);
+  @apply outline-primary-500;
+  outline: 2px solid;
   outline-offset: 2px;
 }
 
 /* Skip to content link */
 .skip-link {
+  @apply bg-primary-950;
   position: absolute;
   top: -40px;
   left: 6px;
-  background: var(--color-primary-600);
   color: white;
   padding: 8px;
   text-decoration: none;

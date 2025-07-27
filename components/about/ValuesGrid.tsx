@@ -5,49 +5,49 @@ const values = [
     icon: Shield,
     title: "Integrity",
     description: "We uphold the highest ethical standards in all our professional dealings and client relationships.",
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-primary-500 to-primary-600",
   },
   {
     icon: Users,
     title: "Client-Centric",
     description: "Our clients' success is our priority. We tailor our services to meet unique business needs.",
-    color: "from-emerald-600 to-emerald-700",
+    color: "from-primary-600 to-primary-700",
   },
   {
     icon: Lightbulb,
     title: "Innovation",
     description: "We embrace technology and innovative approaches to deliver efficient and modern solutions.",
-    color: "from-emerald-400 to-emerald-500",
+    color: "from-primary-400 to-primary-500",
   },
   {
     icon: Award,
     title: "Excellence",
     description: "We strive for excellence in every service we provide, ensuring quality and precision.",
-    color: "from-emerald-700 to-emerald-800",
+    color: "from-primary-700 to-primary-800",
   },
   {
     icon: Clock,
     title: "Reliability",
     description: "Timely delivery and consistent service quality you can depend on for your business needs.",
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-primary-500 to-primary-600",
   },
   {
     icon: HandHeart,
     title: "Empathy",
     description: "We understand the challenges businesses face and provide compassionate, supportive guidance.",
-    color: "from-emerald-600 to-emerald-700",
+    color: "from-primary-600 to-primary-700",
   },
   {
     icon: CheckCircle,
     title: "Accountability",
     description: "We take full responsibility for our work and are committed to delivering on our promises.",
-    color: "from-emerald-400 to-emerald-500",
+    color: "from-primary-400 to-primary-500",
   },
   {
     icon: TrendingUp,
     title: "Growth-Oriented",
     description: "We focus on solutions that not only solve current issues but also support future growth.",
-    color: "from-emerald-700 to-emerald-800",
+    color: "from-primary-700 to-primary-800",
   },
 ]
 
@@ -72,7 +72,7 @@ export function ValuesGrid() {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-100 hover:border-emerald-200"
+                className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-100 hover:border-primary-200"
               >
                 {/* Icon */}
                 <div
@@ -82,7 +82,7 @@ export function ValuesGrid() {
                 </div>
 
                 {/* Content */}
-                <h3 className="font-playfair text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors duration-300">
+                <h3 className="font-playfair text-xl font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
                   {value.title}
                 </h3>
 
@@ -90,7 +90,7 @@ export function ValuesGrid() {
 
                 {/* Hover Effect */}
                 <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-full h-1 bg-gradient-to-r from-emerald-200 to-emerald-400 rounded-full"></div>
+                  <div className="w-full h-1 bg-gradient-to-r from-primary-200 to-primary-400 rounded-full"></div>
                 </div>
               </div>
             )

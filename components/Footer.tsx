@@ -9,7 +9,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">RG</span>
               </div>
               <div>
@@ -79,7 +79,7 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-emerald-400" />
+                <Mail className="w-4 h-4 text-primary-400" />
                 <a
                   href="mailto:rajat@example.com"
                   className="text-slate-300 hover:text-white transition-colors duration-200 text-sm"
@@ -88,7 +88,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-emerald-400" />
+                <Phone className="w-4 h-4 text-primary-400" />
                 <a
                   href="tel:+919876543210"
                   className="text-slate-300 hover:text-white transition-colors duration-200 text-sm"
@@ -97,7 +97,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 text-emerald-400 mt-0.5" />
+                <MapPin className="w-4 h-4 text-primary-400 mt-0.5" />
                 <address className="text-slate-300 text-sm not-italic">
                   123 Business District
                   <br />

@@ -21,7 +21,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-white">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-white pt-5">
       {/* Parallax Background Elements */}
       <div ref={parallaxRef} className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-slate-200 rounded-full blur-3xl"></div>
@@ -34,8 +34,8 @@ export function HeroSection() {
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
               <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                Empowering Businesses with <span className="text-emerald-600">Compliance</span> &{" "}
-                <span className="text-emerald-600">Clarity</span>
+                Empowering Businesses with <span className="text-primary-600">Compliance</span> &{" "}
+                <span className="text-primary-600">Clarity</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
                 Professional Company Secretary services that ensure your business stays compliant, efficient, and ready
@@ -46,22 +46,22 @@ export function HeroSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-lg mb-2 mx-auto">
-                  <Shield className="w-6 h-6 text-emerald-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-2 mx-auto">
+                  <Shield className="w-6 h-6 text-primary-600" />
                 </div>
                 <div className="text-2xl font-bold text-slate-900">500+</div>
                 <div className="text-sm text-gray-600">Clients Served</div>
               </div>
               <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-lg mb-2 mx-auto">
-                  <Users className="w-6 h-6 text-emerald-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-2 mx-auto">
+                  <Users className="w-6 h-6 text-primary-600" />
                 </div>
                 <div className="text-2xl font-bold text-slate-900">10+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-lg mb-2 mx-auto">
-                  <Award className="w-6 h-6 text-emerald-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-2 mx-auto">
+                  <Award className="w-6 h-6 text-primary-600" />
                 </div>
                 <div className="text-2xl font-bold text-slate-900">100%</div>
                 <div className="text-sm text-gray-600">Compliance Rate</div>
@@ -72,14 +72,14 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 focus-visible:focus"
+                className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all duration-200 transform hover:scale-105 focus-visible:focus"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-emerald-600 text-emerald-600 font-semibold rounded-lg hover:bg-emerald-600 hover:text-white transition-all duration-200 focus-visible:focus"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-600 hover:text-white transition-all duration-200 focus-visible:focus"
               >
                 View Services
               </Link>
@@ -88,8 +88,8 @@ export function HeroSection() {
 
           {/* Hero Image/Illustration */}
           <div className="relative">
-            <div className="relative w-full h-96 lg:h-[500px] bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-emerald-800/20"></div>
+            <div className="relative w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-600/20 to-primary-800/20"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-persianBlue-800">
                   <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg">

@@ -14,7 +14,7 @@ export function ComprehensiveServicesHero() {
         {/* Hero Content */}
         <div className="text-center mb-16">
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Comprehensive <span className="text-emerald-600">Tax & Legal</span> Services
+            Comprehensive <span className="text-primary-600">Tax & Legal</span> Services
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             From GST compliance to direct tax advisory, audit services to specialized business solutions - we provide
@@ -32,8 +32,8 @@ export function ComprehensiveServicesHero() {
                 key={index}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-lg mb-4 mx-auto">
-                  <IconComponent className="w-6 h-6 text-emerald-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4 mx-auto">
+                  <IconComponent className="w-6 h-6 text-primary-600" />
                 </div>
                 <div className="text-2xl font-bold text-slate-900 mb-1">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
@@ -43,13 +43,13 @@ export function ComprehensiveServicesHero() {
         </div>
 
         {/* Key Highlights */}
-        <div className="bg-emerald-50 rounded-2xl p-8 lg:p-12">
+        <div className="bg-primary-50 rounded-2xl p-8 lg:p-12">
           <h2 className="font-playfair text-2xl lg:text-3xl font-bold text-slate-900 text-center mb-8">
             Why Choose Our Services?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-semibold text-slate-900 mb-2">Expert Knowledge</h3>
@@ -58,7 +58,7 @@ export function ComprehensiveServicesHero() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-semibold text-slate-900 mb-2">Proven Results</h3>
@@ -67,7 +67,7 @@ export function ComprehensiveServicesHero() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-semibold text-slate-900 mb-2">Comprehensive Support</h3>

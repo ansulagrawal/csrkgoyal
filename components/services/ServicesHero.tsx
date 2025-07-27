@@ -14,7 +14,7 @@ export function ServicesHero() {
         {/* Hero Content */}
         <div className="text-center mb-16">
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Professional <span className="text-emerald-600">Company Secretary</span> Services
+            Professional <span className="text-primary-600">Company Secretary</span> Services
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             Comprehensive legal and compliance solutions tailored to your business needs. From regulatory filings to
@@ -31,8 +31,8 @@ export function ServicesHero() {
                 key={index}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-lg mb-4 mx-auto">
-                  <IconComponent className="w-6 h-6 text-emerald-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4 mx-auto">
+                  <IconComponent className="w-6 h-6 text-primary-600" />
                 </div>
                 <div className="text-2xl font-bold text-slate-900 mb-1">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
@@ -44,7 +44,7 @@ export function ServicesHero() {
         {/* Service Categories Preview */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl mb-4">
+            <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl mb-4">
               <Shield className="w-7 h-7 text-white" />
             </div>
             <h3 className="font-playfair text-xl font-bold text-slate-900 mb-2">Compliance Services</h3>
@@ -54,7 +54,7 @@ export function ServicesHero() {
           </div>
 
           <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl mb-4">
+            <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl mb-4">
               <FileText className="w-7 h-7 text-white" />
             </div>
             <h3 className="font-playfair text-xl font-bold text-slate-900 mb-2">Legal Documentation</h3>
@@ -64,7 +64,7 @@ export function ServicesHero() {
           </div>
 
           <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-emerald-700 to-emerald-800 rounded-xl mb-4">
+            <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-primary-700 to-primary-800 rounded-xl mb-4">
               <TrendingUp className="w-7 h-7 text-white" />
             </div>
             <h3 className="font-playfair text-xl font-bold text-slate-900 mb-2">Business Advisory</h3>

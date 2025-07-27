@@ -94,7 +94,7 @@ export function Timeline() {
                       event.type === "milestone"
                         ? "bg-gradient-to-br from-yellow-400 to-yellow-500"
                         : event.type === "career"
-                          ? "bg-gradient-to-br from-emerald-500 to-emerald-600"
+                          ? "bg-gradient-to-br from-primary-500 to-primary-600"
                           : "bg-gradient-to-br from-green-500 to-green-600"
                     } ${activeEvent === index ? "scale-110 shadow-lg" : ""}`}
                   >
@@ -104,17 +104,17 @@ export function Timeline() {
                   {/* Content */}
                   <div
                     className={`flex-1 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 ${
-                      activeEvent === index ? "shadow-xl border-2 border-emerald-200" : ""
+                      activeEvent === index ? "shadow-xl border-2 border-primary-200" : ""
                     }`}
                   >
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-2xl font-bold text-emerald-600">{event.year}</span>
+                      <span className="text-2xl font-bold text-primary-600">{event.year}</span>
                       <span
                         className={`px-3 py-1 rounded-full text-xs font-medium ${
                           event.type === "milestone"
                             ? "bg-yellow-100 text-yellow-700"
                             : event.type === "career"
-                              ? "bg-emerald-100 text-emerald-700"
+                              ? "bg-primary-100 text-primary-700"
                               : "bg-green-100 text-green-700"
                         }`}
                       >

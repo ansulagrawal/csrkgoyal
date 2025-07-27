@@ -31,10 +31,10 @@ export function GoogleMap() {
               {!mapLoaded && (
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
                   <div className="text-center">
-                    <MapPin className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
+                    <MapPin className="w-12 h-12 text-primary-400 mx-auto mb-4" />
                     <button
                       onClick={() => setMapLoaded(true)}
-                      className="bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors duration-200"
+                      className="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors duration-200"
                     >
                       Load Interactive Map
                     </button>
@@ -60,10 +60,10 @@ export function GoogleMap() {
           {/* Location Details */}
           <div className="space-y-6">
             {/* Address */}
-            <div className="bg-emerald-50 rounded-xl p-6">
+            <div className="bg-primary-50 rounded-xl p-6">
               <div className="flex items-start space-x-4">
-                <div className="flex items-center justify-center w-10 h-10 bg-emerald-100 rounded-lg flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-emerald-600" />
+                <div className="flex items-center justify-center w-10 h-10 bg-primary-100 rounded-lg flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-primary-600" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-slate-900 mb-2">Office Address</h3>
@@ -77,15 +77,15 @@ export function GoogleMap() {
               <h3 className="font-semibold text-slate-900 mb-4">Getting Here</h3>
               <div className="space-y-3 text-sm text-gray-600">
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-primary-400 rounded-full"></div>
                   <span>5 minutes walk from Rajiv Chowk Metro Station</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-primary-400 rounded-full"></div>
                   <span>Parking available in nearby commercial complexes</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-primary-400 rounded-full"></div>
                   <span>Accessible by bus routes 101, 102, 103</span>
                 </div>
               </div>
@@ -97,13 +97,13 @@ export function GoogleMap() {
                 href={officeLocation.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors duration-200"
+                className="w-full flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200"
               >
                 <Navigation className="w-5 h-5 mr-2" />
                 Get Directions
               </a>
 
-              <button className="w-full flex items-center justify-center px-6 py-3 border-2 border-emerald-600 text-emerald-600 font-semibold rounded-lg hover:bg-emerald-600 hover:text-white transition-colors duration-200">
+              <button className="w-full flex items-center justify-center px-6 py-3 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-600 hover:text-white transition-colors duration-200">
                 <ExternalLink className="w-5 h-5 mr-2" />
                 View in Google Maps
               </button>

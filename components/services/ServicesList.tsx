@@ -146,19 +146,19 @@ export function ServicesList() {
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
                     <div className="flex items-center space-x-3 mb-2">
-                      <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">
+                      <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
                         {service.category}
                       </span>
-                      <span className="text-emerald-600 font-semibold">{service.pricing}</span>
+                      <span className="text-primary-600 font-semibold">{service.pricing}</span>
                     </div>
                     <h3 className="font-playfair text-2xl font-bold text-slate-900 mb-2">{service.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{service.description}</p>
                   </div>
                   <div className="ml-6">
                     {expandedService === service.id ? (
-                      <ChevronUp className="w-6 h-6 text-emerald-600" />
+                      <ChevronUp className="w-6 h-6 text-primary-600" />
                     ) : (
-                      <ChevronDown className="w-6 h-6 text-emerald-600" />
+                      <ChevronDown className="w-6 h-6 text-primary-600" />
                     )}
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export function ServicesList() {
                       <ul className="space-y-2">
                         {service.features.map((feature, index) => (
                           <li key={index} className="flex items-center text-gray-600">
-                            <CheckCircle className="w-4 h-4 text-emerald-500 mr-3 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-primary-500 mr-3 flex-shrink-0" />
                             {feature}
                           </li>
                         ))}
@@ -191,7 +191,7 @@ export function ServicesList() {
                         </div>
                         <div>
                           <span className="font-medium text-gray-700">Pricing: </span>
-                          <span className="text-emerald-600 font-semibold">{service.pricing}</span>
+                          <span className="text-primary-600 font-semibold">{service.pricing}</span>
                         </div>
                       </div>
                     </div>
@@ -202,7 +202,7 @@ export function ServicesList() {
                       <ul className="space-y-2">
                         {service.deliverables.map((deliverable, index) => (
                           <li key={index} className="flex items-center text-gray-600">
-                            <ArrowRight className="w-4 h-4 text-emerald-500 mr-3 flex-shrink-0" />
+                            <ArrowRight className="w-4 h-4 text-primary-500 mr-3 flex-shrink-0" />
                             {deliverable}
                           </li>
                         ))}
@@ -214,14 +214,14 @@ export function ServicesList() {
                   <div className="mt-8 pt-6 border-t border-gray-200 flex flex-col sm:flex-row gap-4">
                     <Link
                       href="/contact"
-                      className="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors duration-200"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200"
                     >
                       Get Started
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center justify-center px-6 py-3 border-2 border-emerald-600 text-emerald-600 font-semibold rounded-lg hover:bg-emerald-600 hover:text-white transition-colors duration-200"
+                      className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-600 hover:text-white transition-colors duration-200"
                     >
                       Request Quote
                     </Link>

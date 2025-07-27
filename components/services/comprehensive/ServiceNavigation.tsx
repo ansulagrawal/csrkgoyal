@@ -54,8 +54,8 @@ export function ServiceNavigation() {
                   onClick={() => scrollToSection(category.id)}
                   className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                     activeSection === category.id
-                      ? "bg-emerald-600 text-white shadow-sm"
-                      : "text-gray-600 hover:text-emerald-600 hover:bg-white"
+                      ? "bg-primary-600 text-white shadow-sm"
+                      : "text-gray-600 hover:text-primary-600 hover:bg-white"
                   }`}
                 >
                   <IconComponent className="w-4 h-4" />
