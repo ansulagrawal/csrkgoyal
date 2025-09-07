@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description:
     "Stay updated with the latest legal insights, compliance updates, and business advisory articles from Rajat Kumar Goyal, Company Secretary.",
   keywords: "Legal Blog, Compliance Updates, Business Articles, Company Secretary Insights, Corporate Law",
+  alternates: {
+    canonical: "/blog",
+  },
 }
 
 export default function BlogPage() {

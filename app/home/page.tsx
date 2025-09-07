@@ -4,6 +4,12 @@ import { BlogCarousel } from "@/components/home/BlogCarousel";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { CTASection } from "@/components/home/CTASection";
 
+export const metadata = {
+  alternates: {
+    canonical: "/home",
+  },
+};
+
 export default function HomePage() {
   return (
     <div id="main-content">

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   applicationName: "Rajat Kumar Goyal - CS",
   publisher: "Rajat Kumar Goyal",
   alternates: {
-    canonical: WEBSITE_URL,
+    canonical: '/',
   },
   openGraph: {
     title: "Rajat Kumar Goyal - Company Secretary",

@@ -1,11 +1,18 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, X, ChevronDown } from "lucide-react";
 
-const navigation = [
+
+interface NavigationItem {
+  name: string;
+  href: string;
+  submenu?: NavigationItem[];
+}
+
+const navigation: NavigationItem[] = [
   { name: "Home", href: "/home" },
   { name: "About", href: "/about" },
   {
@@ -14,21 +21,21 @@ const navigation = [
   },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
-]
+] ;
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -37,7 +44,9 @@ export function Navigation() {
       </a>
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+          isScrolled
+            ? "bg-white/95 backdrop-blur-md shadow-lg"
+            : "bg-transparent"
         }`}
         role="navigation"
         aria-label="Main navigation"
@@ -54,7 +63,9 @@ export function Navigation() {
                 <span className="text-white font-bold text-lg">RG</span>
               </div>
               <div className="hidden sm:block">
-                <span className="font-playfair text-xl font-bold text-slate-800">Rajat Kumar Goyal</span>
+                <span className="font-playfair text-xl font-bold text-slate-800">
+                  Rajat Kumar Goyal
+                </span>
                 <p className="text-sm text-gray-600">Company Secretary</p>
               </div>
             </Link>
@@ -70,11 +81,15 @@ export function Navigation() {
                         ? "text-primary-600 border-b-2 border-primary-600"
                         : "text-gray-700 hover:text-primary-600"
                     }`}
-                    onMouseEnter={() => item.submenu && setActiveSubmenu(item.name)}
+                    onMouseEnter={() =>
+                      item.submenu && setActiveSubmenu(item.name)
+                    }
                     onMouseLeave={() => setActiveSubmenu(null)}
                   >
                     {item.name}
-                    {item.submenu && <ChevronDown className="inline w-4 h-4 ml-1" />}
+                    {item.submenu && (
+                      <ChevronDown className="inline w-4 h-4 ml-1" />
+                    )}
                   </Link>
 
                   {/* Submenu */}
@@ -106,7 +121,11 @@ export function Navigation() {
               aria-expanded={isOpen}
               aria-label="Toggle navigation menu"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -151,5 +170,5 @@ export function Navigation() {
         )}
       </nav>
     </>
-  )
+  );
 }

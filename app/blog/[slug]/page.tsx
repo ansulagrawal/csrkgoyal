@@ -106,6 +106,7 @@ const blogPost: {
   readTime: "8 min read",
   // image: "/placeholder.svg?height=400&width=800",
   slug: "corporate-compliance-2024",
+  
   tags: [
     "Compliance",
     "Regulations",
@@ -125,6 +126,9 @@ export async function generateMetadata({
     title: `${blogPost.title} | Rajat Kumar Goyal`,
     description: blogPost.excerpt,
     keywords: blogPost.tags.join(", "),
+    alternates: {
+      canonical: `/blog/${params.slug}`,
+    },
   };
 }
 
