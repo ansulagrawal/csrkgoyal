@@ -9,7 +9,7 @@ const blogPosts = [
     excerpt:
       "Understanding the latest regulatory changes and their impact on your business operations. A comprehensive guide to staying compliant in the evolving legal landscape.",
     category: "Compliance",
-    author: "Rajat Goyal",
+    author: "Rajat Kumar Goyal",
     date: "2024-01-15",
     readTime: "8 min read",
     views: 1250,
@@ -23,7 +23,7 @@ const blogPosts = [
     excerpt:
       "A comprehensive checklist of must-have legal documentation for new businesses. Protect your startup from day one with proper legal foundations.",
     category: "Startup Guide",
-    author: "Rajat Goyal",
+    author: "Rajat Kumar Goyal",
     date: "2024-01-12",
     readTime: "6 min read",
     views: 980,
@@ -38,7 +38,7 @@ const blogPosts = [
     excerpt:
       "How to conduct productive board meetings that drive business success while maintaining compliance with governance requirements.",
     category: "Corporate Governance",
-    author: "Rajat Goyal",
+    author: "Rajat Kumar Goyal",
     date: "2024-01-10",
     readTime: "7 min read",
     views: 756,
@@ -53,7 +53,7 @@ const blogPosts = [
     excerpt:
       "Exploring how technology is revolutionizing legal services and improving client experiences in the modern business environment.",
     category: "Legal Updates",
-    author: "Rajat Goyal",
+    author: "Rajat Kumar Goyal",
     date: "2024-01-08",
     readTime: "5 min read",
     views: 642,
@@ -68,7 +68,7 @@ const blogPosts = [
     excerpt:
       "Everything you need to know about due diligence processes in mergers, acquisitions, and investment transactions.",
     category: "Business Advisory",
-    author: "Rajat Goyal",
+    author: "Rajat Kumar Goyal",
     date: "2024-01-05",
     readTime: "10 min read",
     views: 1100,
@@ -83,7 +83,7 @@ const blogPosts = [
     excerpt:
       "Master the art of contract drafting with our guide to essential clauses that protect your business interests.",
     category: "Legal Updates",
-    author: "Rajat Goyal",
+    author: "Rajat Kumar Goyal",
     date: "2024-01-03",
     readTime: "9 min read",
     views: 890,

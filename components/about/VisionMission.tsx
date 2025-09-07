@@ -51,10 +51,9 @@ export function VisionMission() {
         {/* Quote Section */}
         <div className="mt-16 text-center">
           <blockquote className="font-playfair text-2xl lg:text-3xl font-medium text-slate-900 mb-4 italic">
-            "Success in business requires training and discipline and hard work. But if you're not frightened by these
-            things, the opportunities are just as great today as they ever were."
+            "Take up one idea. Make that one idea your life—think of it, dream of it, live on that idea. This is the way to success."
           </blockquote>
-          <cite className="text-primary-600 font-semibold">- David Rockefeller</cite>
+          <cite className="text-primary-600 font-semibold">- Swami Vivekananda</cite>
         </div>
       </div>
     </section>

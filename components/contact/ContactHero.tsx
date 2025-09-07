@@ -1,4 +1,12 @@
-import { Phone, Mail, MapPin, Clock, MessageCircle, Calendar } from "lucide-react"
+import { EMAIL, MAP_URL, OFFICE_TIMINGS, PHONE, PLACE_NAME } from "@/config";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  MessageCircle,
+  Calendar,
+} from "lucide-react";
 
 export function ContactHero() {
   return (
@@ -24,8 +32,9 @@ export function ContactHero() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-            Ready to secure your business compliance and unlock growth opportunities? Our expert team is here to provide
-            personalized solutions tailored to your unique business needs.
+            Ready to secure your business compliance and unlock growth
+            opportunities? Our expert team is here to provide personalized
+            solutions tailored to your unique business needs.
           </p>
         </div>
 
@@ -36,12 +45,14 @@ export function ContactHero() {
               <Phone className="w-7 h-7 text-white" />
             </div>
             <h3 className="font-semibold text-slate-900 mb-2">Call Us</h3>
-            <p className="text-gray-600 text-sm mb-3">Immediate assistance available</p>
+            <p className="text-gray-600 text-sm mb-3">
+              Immediate assistance available
+            </p>
             <a
-              href="tel:+919876543210"
+              href={`tel:+91${PHONE}`}
               className="text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200 text-lg"
             >
-              +91 98765 43210
+              +91 {PHONE}
             </a>
           </div>
 
@@ -50,12 +61,14 @@ export function ContactHero() {
               <Mail className="w-7 h-7 text-white" />
             </div>
             <h3 className="font-semibold text-slate-900 mb-2">Email Us</h3>
-            <p className="text-gray-600 text-sm mb-3">Detailed inquiries welcome</p>
+            <p className="text-gray-600 text-sm mb-3">
+              Detailed inquiries welcome
+            </p>
             <a
-              href="mailto:rajat@example.com"
-              className="text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200"
+              href={`mailto:${EMAIL}`}
+              className="block w-full overflow-hidden whitespace-nowrap text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200 truncate"
             >
-              rajat@example.com
+              {EMAIL}
             </a>
           </div>
 
@@ -64,22 +77,35 @@ export function ContactHero() {
               <MapPin className="w-7 h-7 text-white" />
             </div>
             <h3 className="font-semibold text-slate-900 mb-2">Visit Office</h3>
-            <p className="text-gray-600 text-sm mb-3">In-person consultations</p>
-            <address className="text-primary-600 font-semibold not-italic">New Delhi, India</address>
+            <p className="text-gray-600 text-sm mb-3">
+              In-person consultations
+            </p>
+            <a
+              href={MAP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-600 font-semibold not-italic"
+            >
+              {PLACE_NAME}
+            </a>
           </div>
 
           <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 text-center border border-white/50 hover:border-primary-200 transform hover:-translate-y-1">
             <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
               <Clock className="w-7 h-7 text-white" />
             </div>
-            <h3 className="font-semibold text-slate-900 mb-2">Business Hours</h3>
+            <h3 className="font-semibold text-slate-900 mb-2">
+              Business Hours
+            </h3>
             <p className="text-gray-600 text-sm mb-3">Monday - Friday</p>
-            <p className="text-primary-600 font-semibold">9:00 AM - 6:00 PM</p>
+            <p className="text-primary-600 font-semibold">
+              {OFFICE_TIMINGS?.[0]?.timings}
+            </p>
           </div>
         </div>
 
         {/* Quick Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
           <button className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white font-semibold rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all duration-200 transform hover:scale-105 shadow-lg">
             <Calendar className="w-5 h-5 mr-2" />
             Schedule Free Consultation
@@ -88,8 +114,8 @@ export function ContactHero() {
             <MessageCircle className="w-5 h-5 mr-2" />
             Start Live Chat
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
-  )
+  );
 }

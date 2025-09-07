@@ -95,7 +95,7 @@ export function HeroSection() {
                   <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg">
                     <span className="text-4xl font-bold text-persianBlue-600">RG</span>
                   </div>
-                  <h3 className="font-playfair text-2xl font-bold mb-2">Rajat Goyal</h3>
+                  <h3 className="font-playfair text-2xl font-bold mb-2">Rajat Kumar Goyal</h3>
                   <p className="text-lg">Company Secretary</p>
                   <p className="text-sm mt-2 opacity-80">Certified Professional</p>
                 </div>

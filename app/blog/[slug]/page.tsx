@@ -101,7 +101,7 @@ const blogPost: {
   excerpt:
     "Understanding the latest regulatory changes and their impact on your business operations. A comprehensive guide to staying compliant in the evolving legal landscape.",
   category: "Compliance",
-  author: "Rajat Goyal",
+  author: "Rajat Kumar Goyal",
   date: "2024-01-15",
   readTime: "8 min read",
   // image: "/placeholder.svg?height=400&width=800",
@@ -122,7 +122,7 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   return {
-    title: `${blogPost.title} | Rajat Goyal`,
+    title: `${blogPost.title} | Rajat Kumar Goyal`,
     description: blogPost.excerpt,
     keywords: blogPost.tags.join(", "),
   };
@@ -245,7 +245,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   {blogPost.author}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Rajat Goyal is a qualified Company Secretary with over 10
+                  Rajat Kumar Goyal is a qualified Company Secretary with over 10
                   years of experience in corporate law, compliance, and business
                   advisory services. He specializes in helping businesses
                   navigate complex regulatory requirements and achieve

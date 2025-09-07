@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowRight, Phone, Mail, Calendar, MessageCircle } from "lucide-react"
+import { EMAIL, PHONE } from "@/config"
 
 export function ServicesContact() {
   return (
@@ -16,16 +17,16 @@ export function ServicesContact() {
         </div>
 
         {/* Contact Options */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/20 transition-colors duration-200">
             <Phone className="w-8 h-8 text-primary-200 mb-4 mx-auto" />
             <h3 className="font-semibold text-lg mb-2">Call Us</h3>
             <p className="text-slate-300 mb-4 text-sm">Immediate consultation</p>
             <a
-              href="tel:+919876543210"
+              href={`tel:+91${PHONE}`}
               className="text-white font-semibold hover:text-primary-200 transition-colors duration-200"
             >
-              +91 98765 43210
+              +91 {PHONE}
             </a>
           </div>
 
@@ -34,14 +35,14 @@ export function ServicesContact() {
             <h3 className="font-semibold text-lg mb-2">Email Us</h3>
             <p className="text-slate-300 mb-4 text-sm">Detailed inquiries</p>
             <a
-              href="mailto:rajat@example.com"
-              className="text-white font-semibold hover:text-primary-200 transition-colors duration-200"
+              href={`mailto:${EMAIL}`}
+              className="text-white font-semibold hover:text-primary-200 transition-colors duration-200 block w-full overflow-hidden truncate"
             >
-              rajat@example.com
+              {EMAIL}
             </a>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/20 transition-colors duration-200">
+          {/* <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/20 transition-colors duration-200">
             <Calendar className="w-8 h-8 text-primary-200 mb-4 mx-auto" />
             <h3 className="font-semibold text-lg mb-2">Schedule Meeting</h3>
             <p className="text-slate-300 mb-4 text-sm">Free consultation</p>
@@ -49,7 +50,7 @@ export function ServicesContact() {
               href="/contact"
               className="text-white font-semibold hover:text-primary-200 transition-colors duration-200"
             >
-              Book Appointment
+              Contact Us
             </Link>
           </div>
 
@@ -60,7 +61,7 @@ export function ServicesContact() {
             <button className="text-white font-semibold hover:text-primary-200 transition-colors duration-200">
               Start Chat
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Main CTA */}

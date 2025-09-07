@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown } from "lucide-react"
 
 const navigation = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/home" },
   { name: "About", href: "/about" },
   {
     name: "Services",
@@ -46,15 +46,15 @@ export function Navigation() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link
-              href="/"
+              href="/home"
               className="flex items-center space-x-2 focus-visible:focus"
-              aria-label="Rajat Goyal Company Secretary - Home"
+              aria-label="Rajat Kumar Goyal Company Secretary - Home"
             >
-              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">RG</span>
               </div>
               <div className="hidden sm:block">
-                <span className="font-playfair text-xl font-bold text-slate-800">Rajat Goyal</span>
+                <span className="font-playfair text-xl font-bold text-slate-800">Rajat Kumar Goyal</span>
                 <p className="text-sm text-gray-600">Company Secretary</p>
               </div>
             </Link>

@@ -271,7 +271,7 @@ export function ContactForm() {
             </div>
 
             {/* Privacy Notice */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <p className="text-sm text-gray-500">
                 By submitting this form, you agree to our{" "}
                 <a href="/privacy" className="text-primary-600 hover:text-primary-700 font-medium">
@@ -283,7 +283,7 @@ export function ContactForm() {
                 </a>
                 .
               </p>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>

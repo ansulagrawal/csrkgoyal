@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowRight, Phone, Mail } from "lucide-react"
+import { EMAIL, PHONE } from "@/config"
 
 export function CTASection() {
   return (
@@ -40,10 +41,10 @@ export function CTASection() {
               <h3 className="font-semibold text-lg mb-2">Call Us Directly</h3>
               <p className="text-slate-300 mb-4">Speak with our team for immediate assistance</p>
               <a
-                href="tel:+919876543210"
+                href={`tel:+91${PHONE}`}
                 className="text-white font-semibold hover:text-primary-200 transition-colors duration-200"
               >
-                +91 98765 43210
+                +91 {PHONE}
               </a>
             </div>
 
@@ -52,10 +53,10 @@ export function CTASection() {
               <h3 className="font-semibold text-lg mb-2">Email Us</h3>
               <p className="text-slate-300 mb-4">Send us your queries and we'll respond promptly</p>
               <a
-                href="mailto:rajat@example.com"
+                href={`mailto:${EMAIL}`}
                 className="text-white font-semibold hover:text-primary-200 transition-colors duration-200"
               >
-                rajat@example.com
+                {EMAIL}
               </a>
             </div>
           </div>

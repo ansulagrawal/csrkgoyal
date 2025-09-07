@@ -26,11 +26,11 @@ export function AboutHero() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                Meet <span className="text-primary-600">Rajat Goyal</span>
+              <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                Meet <span className="text-primary-600">Rajat Kumar Goyal</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                A dedicated Company Secretary with over 10 years of experience in corporate compliance, legal advisory,
+                A dedicated Company Secretary with over 10+ years of experience in corporate compliance, legal advisory,
                 and business governance. Committed to empowering businesses with clarity and compliance.
               </p>
             </div>
@@ -45,11 +45,11 @@ export function AboutHero() {
                 </li>
                 <li className="flex items-center">
                   <Award className="w-5 h-5 text-primary-500 mr-3" />
-                  Bachelor of Commerce (B.Com) - Delhi University
+                  Master in Commerce (M.Com) - Rajasthan University
                 </li>
                 <li className="flex items-center">
                   <Award className="w-5 h-5 text-primary-500 mr-3" />
-                  Certified Corporate Governance Professional
+                  Bachelor of Law (LLB) - Rajasthan University
                 </li>
               </ul>
             </div>
@@ -85,9 +85,9 @@ export function AboutHero() {
                   <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center mb-6 mx-auto shadow-xl">
                     <span className="text-5xl font-bold text-primary-600">RG</span>
                   </div>
-                  <h3 className="font-playfair text-3xl font-bold mb-2">Rajat Goyal</h3>
+                  <h3 className="font-playfair text-3xl font-bold mb-2">Rajat Kumar Goyal</h3>
                   <p className="text-xl mb-2">Company Secretary</p>
-                  <p className="text-sm opacity-80">CS, B.Com, CCGP</p>
+                  <p className="text-sm opacity-80">CS, LLB, M.Com</p>
                 </div>
               </div>
 

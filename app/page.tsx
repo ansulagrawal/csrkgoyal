@@ -1,17 +1,11 @@
-import { HeroSection } from "@/components/home/HeroSection"
-import { ServicesGrid } from "@/components/home/ServicesGrid"
-import { BlogCarousel } from "@/components/home/BlogCarousel"
-import { TestimonialsSection } from "@/components/home/TestimonialsSection"
-import { CTASection } from "@/components/home/CTASection"
+import { DisclaimerModal } from "@/components/home/DisclaimerModal";
+import HomePage from "./home/page";
 
-export default function HomePage() {
+export default function RootPage() {
   return (
-    <div id="main-content">
-      <HeroSection />
-      <ServicesGrid />
-      <BlogCarousel />
-      <TestimonialsSection />
-      <CTASection />
-    </div>
-  )
+    <>
+      <DisclaimerModal />
+      <HomePage />
+    </>
+  );
 }
