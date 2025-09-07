@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Rajat Kumar Goyal",
     images: [
       {
-        url: WEBSITE_URL + "/og-image.png", // 1200x630 recommended
+        url: WEBSITE_URL + "/open-graph.png", // 1200x630 recommended
         width: 1200,
         height: 630,
         alt: "Rajat Kumar Goyal Logo and Branding",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rajat Kumar Goyal - Company Secretary",
     description: "Empowering Businesses with Compliance & Clarity",
-    images: [WEBSITE_URL + "/og-image.png"],
+    images: [WEBSITE_URL + "/open-graph.png"],
     // creator: "@csrajatkgoyal",
   },
   icons: {
