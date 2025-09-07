@@ -43,45 +43,71 @@ export function DisclaimerModal() {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
       <div className="bg-white rounded shadow-xl max-w-2xl w-full p-6 animate-fadeInScale">
         <h2 className="text-2xl font-bold text-center mb-4 text-slate-800">
-          Disclaimer
+          DISCLAIMER
         </h2>
         <div className="text-gray-700 space-y-4 text-sm leading-relaxed max-h-[60vh] overflow-y-auto pr-2">
           <p>
-            As per The Chartered Accountants Act, 1949, we are not permitted to
-            solicit work or advertise for our services. The user acknowledges
-            the following:
+            As per the provisions of the Company Secretaries Act, 1980 and the
+            guidelines issued by the Institute of Company Secretaries of India
+            (ICSI), we are not permitted to advertise or solicit work in any
+            form, whether directly or indirectly.
           </p>
+
           <p>
-            There has been no advertisement, personal communication,
-            solicitation, invitation or inducement of any kind whatsoever from
-            us or any of our members to solicit any work through this website.
+            By accessing this website, you acknowledge and agree to the
+            following:
           </p>
+
           <p>
-            The user wishes to gain more information about us for his/her own
-            information and use.
+            <strong>No Advertisement or Solicitation</strong><br />
+            This website is not intended to be, and must not be interpreted as,
+            an advertisement or solicitation of professional services. There has
+            been no invitation or inducement of any sort from us or any of our
+            members to solicit any work through this website.
           </p>
+
           <p>
-            We are not liable to any consequence of any action taken by the user
-            relying on the material/information provided on this website.
+            <strong>User-Initiated Access</strong><br />
+            The information available on this website is solely for
+            informational purposes and has been provided at your own request.
+            You wish to gain more knowledge about the professional profile and
+            services offered by the Practicing Company Secretary voluntarily.
           </p>
+
           <p>
-            The information provided under this website is solely available at
-            your request for informational purposes only, should not be
-            interpreted as soliciting or advisement nor does such information
-            constitute legal advice.
+            <strong>No Professional Relationship</strong><br />
+            Merely accessing this website, downloading information, or
+            communicating with us through this website does not create a
+            professional or contractual relationship between the user and the
+            Practicing Company Secretary.
           </p>
+
           <p>
-            The information about us is provided to the user only on his/her
-            specific request. Any information obtained or material downloaded
-            from this website is completely at the user’s volition and any
-            transmission, receipt or use of this site would not create any form
-            of relationship between us.
+            <strong>No Legal Advice</strong><br />
+            The contents of this website should not be construed as legal
+            advice. Users are advised to seek appropriate and independent legal
+            or professional advice before acting upon any information provided
+            herein.
           </p>
+
           <p>
-            In cases where the user has any legal issues, he/she in all cases
-            must seek independent legal advice.
+            <strong>Limitation of Liability</strong><br />
+            We shall not be responsible for any loss or damage caused to any
+            person relying on the material/information provided on this website.
+            Any reliance placed on such information is strictly at the user's
+            own risk.
+          </p>
+
+          <p>
+            <strong>Compliance with ICSI Guidelines</strong><br />
+            This website is intended to comply with the guidelines for websites
+            issued by the ICSI and is restricted to providing only basic
+            information about the Practicing Company Secretary, his/her
+            qualifications, and services in a manner permitted under the
+            applicable regulations.
           </p>
         </div>
+
         <div className="mt-6 flex justify-center gap-4">
           <button
             onClick={handleDecline}
